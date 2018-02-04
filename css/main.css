@@ -25,9 +25,39 @@ html {
 }
 
 .banner {
-
+  position: relative;
+  text-align: center;
 }
 
 .banner-content {
+  color: #fff;
+  position: absolute;
+  bottom: 1em;
+  left: .5em;
+}
 
+@media only screen and (min-width: 60em) {
+
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+  }
+
+  .banner {
+    max-height: 25em;
+    overflow: hidden;
+  }
+}
+
+@media only screen and (min-width: 90em) {
+
+  html {
+    font-size: 130%;
+    line-height: 1.5;
+  }
+
+  .banner-content {
+    margin: auto;
+    text-align: center;
+  }
 }
